@@ -31,6 +31,6 @@ Ensure the following tools and headers are installed on your Linux system:
 ### Clone the Repository
 To get started, clone this repository:
 
-git clone https://github.com/yourusername/linux_device_driver.git
-cd linux_device_driver
+ - git clone https://github.com/yourusername/linux_device_driver.git
+ - cd linux_device_driver
 

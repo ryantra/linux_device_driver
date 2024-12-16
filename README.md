@@ -1,13 +1,36 @@
-# linux_device_driver
+# Linux Device Driver Development
 
-This repo generally is created for exploring the Linux Kernel Modules and Linux Device Drivers.
+This repository showcases my work on Linux kernel module and device driver development. It demonstrates my understanding of low-level programming concepts, system calls, and interaction between user space and kernel space. The main focus is on character device drivers and related kernel module development.
 
-To start up with the process I used my Laptop Lenovo Yoga, instead of any development board e.g (Pi, or other )or I might switch back to other development board where I will have easy access of GPIO ports for performing some applications.
+## Features
+- **Character Device Driver**:
+  - Dynamic allocation of major and minor numbers.
+  - Basic file operations: open, read, write, and close.
+  - Clean error handling and resource management.
+- **Hello Kernel Module**:
+  - A simple kernel module to understand kernel programming basics.
+- **Parameterized Kernel Module**:
+  - Demonstrates the use of parameters passed during module insertion.
+- **User-Space Test Applications**:
+  - Test applications written in C to interact with the character device driver.
 
-Through the entire process I am trying to explore on these topics
+## Directory Structure
+- chardev/: Character device driver source code and user-space test application.
+- hello_kernel/: Simple kernel module printing messages to the kernel log.
+- mod_parameter/: Kernel module with user-configurable parameters.
+- README.md: Documentation for the project.
 
-1. Simple Kernel Module
-2. Device Number and Device Files
-3. Creating a device file in driver and callbacks
-4. GPIO Drivers 
-5. Text LCD Drivers
+## Setup and Installation
+
+### Prerequisites
+Ensure the following tools and headers are installed on your Linux system:
+- Linux kernel development headers (`linux-headers` package).
+- GCC compiler.
+- Make utility.
+
+### Clone the Repository
+To get started, clone this repository:
+
+git clone https://github.com/yourusername/linux_device_driver.git
+cd linux_device_driver
+

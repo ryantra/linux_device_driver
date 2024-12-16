@@ -1,0 +1,10 @@
+# Ignore build artifacts and generated files
+*.ko
+*.mod
+*.mod.*
+*.o
+*.order
+*.symvers
+
+# Ignore any test_app binary
+test_app
